@@ -10,6 +10,7 @@ body {
   background-color: #080c20;
   max-width: 100%;
   font-family: 'Manrope', sans-serif;
+  overflow-x: hidden;
 }
 
 p {
@@ -37,7 +38,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   height: 500px;
 }
 
@@ -71,7 +72,7 @@ p {
   background-image: url('images/bg-hero-squiggle.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   margin: 25px 45px;
   width: 500px;
   height: 500px;
@@ -100,8 +101,9 @@ p {
   justify-content: center;
   align-items: center;
   text-align: left;
-  width: 1440px;
+  /* width: 1440px; */
   margin: 100px 25px 100px 25px;
+  box-sizing: border-box;
 }
 
 .perks__high {
@@ -211,7 +213,7 @@ p {
   width: 448px;
   background-color: #093f68;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-right: 25px;
 }
 
@@ -245,7 +247,7 @@ p {
   width: 448px;
   background-color: #3ee9e5;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .icon {
@@ -280,7 +282,144 @@ ul li:before {
   padding-right: 20px;
 }
 
+/* footer section */
+
+/* .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(images/bg-footer-squiggle.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  font-family: 'Manrope';
+}
+
+.footer__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  width: 100vw;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
 .btn {
-  background-color: #04aa6d;
+  background-color: #3ee9e5;
+  width: 140px;
+  height: 48px;
+  color: #080c20;
+  border-radius: 40px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.btn:hover {
+  width: 140px;
+  height: 48px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px solid #3ee9e5;
+
+}
+
+.btn:active {
+  transform: translateY(5px);
+}
+
+.notify__email {
+  background-color: #093f68;
+  width: 320px;
+  height: 48px;
+  border-radius: 40px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+input[type='email'] {
+  border: none;
+  border-radius: 40px;
+  padding: 10px;
+} */
+
+/* new footer */
+
+.footer {
+  padding: 5%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(images/bg-footer-squiggle.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.footer input {
+  outline: none;
+  border: none;
+  background-color: #093f68;
+  color: white;
+  font-size: 18px;
   padding: 20px;
+  border-radius: 30px;
+  height: 48px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer #input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer div {
+  display: flex;
+}
+
+.footer h2 {
+  color: #fff;
+  padding: 20px;
+}
+
+.error {
+  visibility: hidden;
+}
+
+.btn {
+  background-color: #3ee9e5;
+  width: 140px;
+  height: 48px;
+  color: #093f68;
+  border-radius: 40px;
+  font-size: 15px;
+  margin-left: 20px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  width: 140px;
+  height: 48px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px solid #3ee9e5;
+}
+
+.btn:active {
+  transform: translateY(5px);
 }
