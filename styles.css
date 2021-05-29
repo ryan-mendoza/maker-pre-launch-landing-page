@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Red+Hat+Display:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Red+Hat+Display:wght@200;400;500;900&display=swap');
 
 * {
   margin: 0;
@@ -9,6 +9,7 @@
 body {
   background-color: #080c20;
   max-width: 100%;
+  font-family: 'Manrope', sans-serif;
 }
 
 p {
@@ -36,7 +37,6 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Manrope', sans-serif;
   max-width: 1440px;
   height: 500px;
 }
@@ -54,9 +54,8 @@ p {
 }
 
 .text {
-  font-family: 'Manrope', sans-serif;
   color: #777f98;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 15px;
   line-height: 25px;
   width: 500px;
@@ -103,7 +102,6 @@ p {
   text-align: left;
   width: 1440px;
   margin: 100px 25px 100px 25px;
-  border: 1px solid #fff;
 }
 
 .perks__high {
@@ -114,14 +112,12 @@ p {
 }
 
 .perks__high h3 {
-  font-family: 'Manrope', sans-serif;
   color: #fff;
   font-size: 18px;
   padding-top: 25px;
 }
 
 .perks__high .text {
-  font-family: 'Manrope';
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
@@ -140,6 +136,90 @@ p {
   width: 150px;
   background-color: #093f68;
   border-radius: 45px;
+}
+
+.perks__low {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-top: 100px;
+}
+
+.perks__low h3 {
+  color: #fff;
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+.perks__low .text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  width: 300px;
+  text-align: left;
+  margin-top: 25px;
+  padding: 0 50px;
+  color: #777f98;
+}
+
+.image__low {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: #093f68;
+  border-radius: 45px;
+}
+
+/* pricing plans section */
+.pricing__plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__heading {
+  font-weight: 800;
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.pricing__text {
+  font-size: 15px;
+}
+
+.price__options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 100px 0px;
+  border: 1px solid #fff;
+}
+
+.price__left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  height: 445px;
+  width: 448px;
+  background-color: #093f68;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.price__left h3 {
+  margin: 50px 0px 25px 0px;
+  color: #fff;
+}
+
+.price__left h2 {
+  margin: 50px 0px 25px 0px;
+  color: #fff;
 }
 
 .ul {
